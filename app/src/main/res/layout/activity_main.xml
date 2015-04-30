@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutHolder"
+    android:background="@android:color/darker_gray"
+    android:measureWithLargestChild="false"
+    android:rowCount="4"
+    android:columnCount="6">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="false"
+        android:id="@+id/topSection">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Olymbion Reservation"
+                    android:id="@+id/headerTextView"
+                    android:gravity="fill_vertical"
+                    android:layout_weight="1"
+                    android:textColor="#363636"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/menuImageButton"
+                    android:src="@android:drawable/ic_menu_share"
+                    android:background="#00000000"
+                    android:focusableInTouchMode="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/middleSection"
+        android:background="#FFFFFF"
+        android:animateLayoutChanges="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Κρατήσεις"
+            android:id="@+id/textView"
+            android:padding="10dp"
+            android:textColor="#ff000000" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button1"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"
+                    />
+
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button2"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"
+                    />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button3"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button4"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button5"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button6"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button7"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button8"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button9"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button10"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button11"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button12"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button13"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button14"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:layout_margin="4dp"
+                    android:id="@+id/button15"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_not_reserved_state"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/bottomSection"
+        android:background="#FAFAFA">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tools"
+                android:id="@+id/textView2"
+                android:textColor="#29A9D2"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/subBottomSection">
+
+                <EditText
+                    android:id="@+id/messageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText1"
+                    android:layout_centerHorizontal="true"
+                    android:text="Send" />
+
+                <TextView
+                    android:id="@+id/textViewClientMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textViewServerPort" />
+
+                <TextView
+                    android:id="@+id/textViewServerIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
